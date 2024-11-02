@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper" class="flex flex-col min-h-screen">
+
+      <!-- Header -->
+      <header id="header" class="bg-blue-800 text-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+          <div class="logo flex items-center">
+            <img
+              id="header-img"
+              src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+              alt="original trombones logo"
+              class="h-10 mr-2"
+            />
+            <span class="text-lg font-semibold">Original Trombones</span>
+          </div>
+
+          <!-- Navigation -->
+          <nav id="nav-bar">
+            <ul class="flex space-x-6">
+              <li><a class="nav-link text-white hover:text-blue-300" href="#features">Features</a></li>
+              <li><a class="nav-link text-white hover:text-blue-300" href="#how-it-works">How It Works</a></li>
+              <li><a class="nav-link text-white hover:text-blue-300" href="#pricing">Pricing</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section id="hero" class="bg-gray-900 text-white text-center py-20">
+        <h2 class="text-4xl font-semibold mb-4">Handcrafted, home-made masterpieces</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" class="mt-6 flex justify-center">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+            class="px-4 py-2 rounded-l-md text-gray-800"
+          />
+          <input id="submit" type="submit" value="Get Started" class="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-r-md" />
+        </form>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="container mx-auto py-20">
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+          <div class="feature-item bg-white shadow-md rounded-lg p-6">
+            <div class="icon text-blue-600 mb-4"><i class="fa fa-3x fa-fire"></i></div>
+            <h2 class="text-2xl font-semibold mb-2">Premium Materials</h2>
+            <p class="text-gray-600">Our trombones use the shiniest brass which is sourced locally, increasing the longevity of your purchase.</p>
+          </div>
+          <div class="feature-item bg-white shadow-md rounded-lg p-6">
+            <div class="icon text-blue-600 mb-4"><i class="fa fa-3x fa-truck"></i></div>
+            <h2 class="text-2xl font-semibold mb-2">Fast Shipping</h2>
+            <p class="text-gray-600">We ensure you receive your trombone quickly, with free returns if you are not satisfied.</p>
+          </div>
+          <div class="feature-item bg-white shadow-md rounded-lg p-6">
+            <div class="icon text-blue-600 mb-4"><i class="fa fa-3x fa-battery-full"></i></div>
+            <h2 class="text-2xl font-semibold mb-2">Quality Assurance</h2>
+            <p class="text-gray-600">We check and test each instrument to ensure it meets our quality standards.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works Section -->
+      <section id="how-it-works" class="bg-gray-200 py-20">
+        <div class="container mx-auto text-center">
+          <iframe
+            id="video"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+            frameborder="0"
+            allowfullscreen
+            class="mx-auto w-full md:w-2/3 lg:w-1/2 rounded-lg shadow-md"
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section id="pricing" class="container mx-auto py-20">
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+          <div class="product bg-white shadow-md rounded-lg p-6">
+            <div class="level text-blue-800 text-lg font-semibold mb-2">Tenor Trombone</div>
+            <h2 class="text-3xl font-bold mb-4">$600</h2>
+            <ul class="list-disc list-inside text-gray-600 mb-4">
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ul>
+            <button class="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded">Select</button>
+          </div>
+          <div class="product bg-white shadow-md rounded-lg p-6">
+            <div class="level text-blue-800 text-lg font-semibold mb-2">Bass Trombone</div>
+            <h2 class="text-3xl font-bold mb-4">$900</h2>
+            <ul class="list-disc list-inside text-gray-600 mb-4">
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ul>
+            <button class="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded">Select</button>
+          </div>
+          <div class="product bg-white shadow-md rounded-lg p-6">
+            <div class="level text-blue-800 text-lg font-semibold mb-2">Valve Trombone</div>
+            <h2 class="text-3xl font-bold mb-4">$1200</h2>
+            <ul class="list-disc list-inside text-gray-600 mb-4">
+              <li>Plays similar to a Trumpet</li>
+              <li>Great for Jazz Bands</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ul>
+            <button class="btn bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded">Select</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-blue-800 text-white py-6">
+        <div class="container mx-auto text-center">
+          <ul class="flex justify-center space-x-6 mb-4">
+            <li><a href="#" class="hover:text-blue-300">Privacy</a></li>
+            <li><a href="#" class="hover:text-blue-300">Terms</a></li>
+            <li><a href="#" class="hover:text-blue-300">Contact</a></li>
+          </ul>
+          <span>Copyright © 2016, Original Trombones</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
